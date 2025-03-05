@@ -3,9 +3,9 @@ public class LinearSearch {
     // Method to perform linear search
 public static int linearSearch(int[]arr,int target)
  {
-     for (int i = 0; i<arr.length; i++) {
-if (arr[i] == target) {
-return i; // Return index if found
+     for (int i=0;i<arr.length; i++) {
+     if (arr[i] == target) {
+    return i; // Return index if found
 } }
 return -1; // Return -1 if not found
 }
@@ -17,14 +17,14 @@ return -1; // Return -1 if not found
       int[] arr = new int[n];
         System.out.println("Enter " + n + " elements:");
 // Input array elements
-for (int i = 0; i<n; i++) {
-arr[i] = scanner.nextInt();
+      for (int i=0;i<n;i++) {
+      arr[i]=scanner.nextInt();
         System.out.print("Enter the element to search: ");
 // Input target element
-int target = scanner.nextInt();
+int target=scanner.nextInt();
 // Call linear search function
-int result = linearSearch(arr, target);
-        if (result != -1) {
+int result=linearSearch(arr, target);
+        if (result !=-1) {
             System.out.println("Element found at index: " + result);
         } else {
             System.out.println("Element not found in the array.");
